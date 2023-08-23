@@ -2,8 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/app voiture/cars" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/destructuring/destruct" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/props-function" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app voiture/cars" vcs="" />
+    <mapping directory="$PROJECT_DIR$/destructuring/destruct" vcs="" />
+    <mapping directory="$PROJECT_DIR$/props-function" vcs="" />
   </component>
 </project>

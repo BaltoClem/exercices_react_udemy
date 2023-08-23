@@ -1,4 +1,4 @@
-// Les conditions dans React JS 06:24
+// Les conditions dans React JS
 
 import './App.css';
 import Result from "./Game";
