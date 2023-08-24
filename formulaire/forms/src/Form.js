@@ -7,7 +7,10 @@ class Form extends Component {
             <>
             <Parrot color="green" height="400"/>
                 <h1>Commentaire</h1>
-                Formulaire
+                <form action="">
+                    <label htmlFor="">Pseudo</label>
+                    <input type="text"/>
+                </form>
             </>
         )
     }
