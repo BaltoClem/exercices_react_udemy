@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import Parrot from "./Parrot";
+// import Parrot from "./Parrot";
+import './myCSS.css';
 
 class Form extends Component {
 
-    state = {
+    /*state = {
         username: '',
         color: '',
         colors: ["", "red", "blue", "green", "black", "pink"],
@@ -31,14 +32,17 @@ class Form extends Component {
         // Le "event.PreventDefault()" va permettre à la page de ne pas rafraîchir et ainsi constater la capture des informations dans le console.log
         event.preventDefault();
         console.log(`Username: ${this.state.username} Couleur: ${this.state.color} Commentaire: ${this.state.comment}`)
-    }
+    }*/
 
     render() {
+
+        const myBool = this.props.bool ? 'blue' : 'red';
+
         return(
             <>
-            <Parrot color={this.state.color} height="400"/>
-                <h1>Commentaire</h1>
-                <form action="" onSubmit={this.handleSubmitForm}>
+            {/*<Parrot color={this.state.color} height="400"/>*/}
+                <h1 className={myBool}>Commentaire</h1>
+                {/*<form action="" onSubmit={this.handleSubmitForm}>
                     <div>
                         <label htmlFor="">Pseudo</label>
                         <input type="text" value={this.state.username} onChange={this.handlePseudo}/>
@@ -60,7 +64,8 @@ class Form extends Component {
 
                     <button>Valider</button>
 
-                </form>
+                </form>*/}
+                <button>Valider</button>
             </>
         )
     }
