@@ -1,6 +1,25 @@
 import React, {Component} from "react";
+/*import MyHead from "./myHeaderOne";*/
+
 // import Parrot from "./Parrot";
-import './myCSS.css';
+/*import './myCSS.css';*/
+
+// L'"import styles" permet de designer un élément spécifique présent dans ce même fichier mais n'appliquera pas les effets sur les élements enfant de ce derneir
+/*import styles from './myCSS.module.css'*/
+
+import styled from 'styled-components';
+
+const Title = styled.h1`
+    color: red;
+    font-size: 80px;
+`
+
+const Button = styled.button`
+    background-color: black;
+    color: white;
+    padding: 12px 13px;
+    font-size: 15px;
+`
 
 class Form extends Component {
 
@@ -36,12 +55,16 @@ class Form extends Component {
 
     render() {
 
-        const myBool = this.props.bool ? 'blue' : 'red';
+       /* const myBool = this.props.bool ? 'blue' : 'red';*/
 
         return(
             <>
             {/*<Parrot color={this.state.color} height="400"/>*/}
-                <h1 className={myBool}>Commentaire</h1>
+                <Title /*className={styles.green}*/>Commentaire 1</Title>
+
+                {/*<MyHead/>
+                <p className={`${myBool} bigFont`}"red">Paragraphe test</p>*/}
+
                 {/*<form action="" onSubmit={this.handleSubmitForm}>
                     <div>
                         <label htmlFor="">Pseudo</label>
@@ -65,7 +88,7 @@ class Form extends Component {
                     <button>Valider</button>
 
                 </form>*/}
-                <button>Valider</button>
+                <Button>Valider</Button>
             </>
         )
     }
