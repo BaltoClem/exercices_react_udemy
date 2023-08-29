@@ -1,17 +1,17 @@
-// 04 - Le cycle de Vie d'un Composant React avec les Classes
+// Les Concepts de React JS - Suite / 002 React Memo  06:50
+
 import {Component} from "react";
-import LifeCycle from "./LifeCycle";
+import ParentComponent from './ParentComponent'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
         <div className="App">
-            <LifeCycle name="Tom2"></LifeCycle>
+            <ParentComponent />
         </div>
     );
   }
-
 }
 
 export default App;
