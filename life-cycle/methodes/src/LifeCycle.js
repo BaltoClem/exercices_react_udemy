@@ -31,6 +31,10 @@ class LifeCycle extends Component{
         console.log(this.state)
     }
 
+    componentWillUnmount() {
+        console.log('Je suis dans la méthode componentWillUnmount()')
+    }
+
     render() {
 
         console.log(`Etape ${this.state.step} : Je suis dans le render()`)

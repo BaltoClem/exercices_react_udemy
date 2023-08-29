@@ -1,4 +1,4 @@
-// 04 - Le cycle de Vie d'un Composant React avec les Classes / 003 La Phase de Mise à Jour
+// 04 - Le cycle de Vie d'un Composant React avec les Classes
 import {Component} from "react";
 import LifeCycle from "./LifeCycle";
 import './App.css';
