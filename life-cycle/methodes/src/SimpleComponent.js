@@ -14,4 +14,4 @@ class SimpleComp extends Component {
     }
 }
 
-export default SimpleComp
+export default SimpleComp;
