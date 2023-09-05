@@ -1,4 +1,4 @@
-// 05 - Les Concepts de ReactJS-Suite / 003 Les Portails _ Création d'un modal 11:19
+// 05 - Les Concepts de ReactJS-Suite / 004 Les Refs
 import './App.css';
 import Modal from "./Modal";
 import {Component} from "react";
