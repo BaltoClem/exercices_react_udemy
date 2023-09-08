@@ -1,18 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-class MyRef extends Component {
+const MyRef = React.forwardRef((props, ref) => {
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            value: ''
-        }
-
-        this.myTitle = React.createRef();
-        this.myInput = React.createRef();
-    }
-
+    console.log(props);
+    console.log(ref);
     // update = event => {
     //     this.setState({
     //         value: event.target.value
@@ -22,29 +13,24 @@ class MyRef extends Component {
     // componentDidMount() {
     //     this.myInput.current.focus();
     // }
-    addFocus = () => {
+    /*addFocus = () => {
         this.myInput.current.focus();
-    }
+    }*/
 
     // componentDidUpdate(prevProps, prevState) {
     //
     //     this.myTitle.current.style.color ='red';
     // }
 
-    handleClick = () => {
-        console.log(this.myInput.current.value)
-    }
-
-    render() {
-        return(
-            <>
+    /* handleClick = () => {
+         console.log(this.myInput.current.value)
+     }*/
+    return(
+        <>
             {/*<h1 ref={this.myTitle}>Valeur: {this.state.value}</h1>*/}
             {/*<input ref={this.myInput} type="text" value={this.state.value} onChange={this.update}/>*/}
-                <input ref={this.myInput} type="text"/>
-
-            </>
-        )
-    }
-}
-
+            <input ref={ref} type="text"/>
+        </>
+    )
+})
 export default  MyRef;

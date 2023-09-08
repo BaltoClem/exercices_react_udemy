@@ -1,4 +1,4 @@
-// Les concepts de ReactJS - Suite / 004 Les Refs 04:12
+// Les concepts de ReactJS - Suite / 006 Les Composants d'Ordre Supérieur
 import './App.css';
 import MyRef from "./MyRef";
 import React, {Component} from "react";
@@ -11,15 +11,14 @@ class App extends Component {
         this.refComponent = React.createRef();
 
     }
-
     handleClick = () => {
         /*console.log(this.refComponent.current)*/
-        this.refComponent.current.addFocus();
+        this.refComponent.current.focus();
     }
     render(){
   return (
     <div className="App">
-      <MyRef ref={this.refComponent} />
+      <MyRef name='Toto' ref={this.refComponent} />
 
         <button onClick={this.handleClick}>Valider</button>
     </div>
