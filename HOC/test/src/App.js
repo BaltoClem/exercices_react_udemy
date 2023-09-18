@@ -1,4 +1,4 @@
-// Les Concepts de React Suite - 006 Les Composants d'Ordre Supérieur - HOC 14:36
+// Les Concepts de React Suite - 006 Les Composants d'Ordre Supérieur - HOC 25:50
 import React, { Component } from "react";
 import Vegeta from "./Vegeta";
 import Goku from "./Goku";
@@ -15,7 +15,7 @@ class App extends Component {
           <div className="row">
 
               <Vegeta name="Vegeta" />
-              <Goku name="Goku" />
+              <Goku name="Goku"/>
 
           </div>
         </div>

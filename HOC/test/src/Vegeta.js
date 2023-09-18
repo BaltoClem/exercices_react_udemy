@@ -1,23 +1,16 @@
 import React, { Component } from 'react';
+import countHits from "./countHits";
 import vegeta from './vegeta.png';
 class Vegeta extends Component {
-    state= {
-        hits: 0
-    }
-
-    addOne = () => {
-        this.setState(prevState => {
-            return {
-                hits: prevState.hits + 1
-            }
-        })
-    }
     render() {
+
+        const {name, addOneHit, hocState} = this.props;
+
         return(
             <div className="col">
 
-                <img src={vegeta} alt="vegeta"/><br/>
-                <button onClick={this.addOne} className="btn btn-success m-3">{this.props.name} attaque !</button>
+                <img src={vegeta} alt="vegeta" /><br/>
+                <button onClick={addOneHit} className="btn btn-success m-3">{name} attaque !</button>
 
                 <table className="table table-striped">
                     <thead>
@@ -27,7 +20,7 @@ class Vegeta extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{this.state.hits}</td>
+                            <td>{hocState.hits}</td>
                         </tr>
                     </tbody>
 
@@ -37,4 +30,4 @@ class Vegeta extends Component {
     }
 }
 
-export default Vegeta;
+export default countHits(Vegeta);

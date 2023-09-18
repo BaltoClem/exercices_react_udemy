@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
+import countHits from "./countHits";
 import goku from './goku.png';
+
 class Goku extends Component {
-    state= {
-        hits: 0
-    }
-
-    addOne = () => {
-        this.setState(prevState => {
-            return {
-                hits: prevState.hits + 1
-            }
-        })
-    }
     render() {
-        return(
-            <div className="col">
+        const { name, addOneHit, hocState } = this.props;
 
-                <img src={goku} alt="goku"/ ><br/>
-                <button onClick={this.addOne} className="btn btn-success m-3">{this.props.name} attaque !</button>
+        return (
+            <div className="col">
+                <img src={goku} alt="goku" /><br />
+                <button onClick={addOneHit} className="btn btn-success m-3">{name} attaque !</button>
 
                 <table className="table table-striped">
                     <thead>
@@ -27,14 +19,13 @@ class Goku extends Component {
                     </thead>
                     <tbody>
                     <tr>
-                        <td>{this.state.hits}</td>
+                        <td>{hocState.hits}</td>
                     </tr>
                     </tbody>
-
                 </table>
             </div>
         )
     }
 }
 
-export default Goku;
+export default countHits(Goku);
