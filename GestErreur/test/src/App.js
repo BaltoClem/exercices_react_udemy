@@ -1,26 +1,34 @@
-// 05 Les Concepts de React JS - 007 La Gestion d'Erreurs dans React 01:39
-import logo from './logo.svg';
+// Les Concepts de React Suite - 007 La gestion d'erreurs dans React 20:45
+import React, { Component } from "react";
+import Vegeta from './components/Vegeta';
+import Goku from "./components/Goku";
+import Frieza from "./components/Frieza";
+import ErrorBoundary from "./components/ErrorBoundary";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="container text-center">
+                <h1>Cliquez sur les gentils</h1>
+                <div className="row">
+
+                    <ErrorBoundary>
+                        <Vegeta />
+                    </ErrorBoundary>
+
+                    <ErrorBoundary>
+                        <Goku />
+                    </ErrorBoundary>
+
+                    <ErrorBoundary>
+                        <Frieza />
+                    </ErrorBoundary>
+
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
