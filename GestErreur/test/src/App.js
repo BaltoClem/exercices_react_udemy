@@ -7,6 +7,15 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import './App.css';
 
 class App extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            bg: ''
+        }
+    }
+
     render() {
         return (
             <div className="container text-center">

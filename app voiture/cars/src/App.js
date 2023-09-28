@@ -1,5 +1,3 @@
-//03 - Les concepts de React JS -> 007 Le Destructuring - Partie 1
-
 import './App.css';
 import Mycars from "./components/Mycars";
 import React, { Component } from "react";

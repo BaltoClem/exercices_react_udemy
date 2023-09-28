@@ -23,7 +23,7 @@ const countHits = (WrappedComponent, power) => {
 
         render() {
             return (
-                <WrappedComponent addOneHit={this.addOne} hocState={this.state} {...this.props} />
+              <WrappedComponent addOneHit={this.addOne} hocState={this.state} {...this.props} />
             );
         }
     }
