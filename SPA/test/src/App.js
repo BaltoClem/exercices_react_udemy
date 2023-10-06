@@ -1,9 +1,10 @@
-// Les Concepts de React Suite - 009 BrowserRoute, Route, Switch, Nav, NavLink, Strict et Exact - 17:24
+// Les Concepts de React Suite - 011 Paramètres Route - 10:41
 import React, { Component } from 'react';
 import Docs from './components/Docs';
 import Tutorials from './components/Tutorials';
 import Community from './components/Community';
 import Menu from './components/Menu';
+import Profile from './components/Profile';
 import ErrorPage from './components/ErrorPage';
 import { BrowserRouter, Route, Routes, Redirect } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -35,8 +36,8 @@ constructor(props) {
             this.state.underConst.Tutorials ? (<Redirect to="/"/>) : (<Tutorials />)
           )} /> */}
 
-
           <Route path='/community' element={<Community />} />
+          <Route path='/users/:id' element={<Profile />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
     </BrowserRouter>
