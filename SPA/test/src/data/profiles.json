@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "bio": "I am a web developer with a passion for coding.",
+    "avatar": "https://placekitten.com/200/200"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "bio": "I love hiking and photography.",
+    "avatar": "https://placekitten.com/201/201"
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "email": "bob@example.com",
+    "bio": "Coffee enthusiast and bookworm.",
+    "avatar": "https://placekitten.com/202/202"
+  }
+]
